@@ -60,7 +60,7 @@ This is a "Markdown" file, a common file type used by programmers to write docum
 1. Open your cs50.dev codespace, and open the terminal
 2. Run this command:
 ```
-wget https://gist.githubusercontent.com/mrsharp-milken/1606c447a0a1ae75ec837e8ee9c304b6/raw/512520332dfea6a8a12b22d5845e30435ecb05f2/README.md
+wget https://raw.githubusercontent.com/mrsharp-milken/AP-CS-Principles/refs/heads/main/README.md
 ```
 4. Right click the new file named `README.md` then choose "Open Preview"
 5. You can also drag the tab to the right to split the screen into two tabs.
