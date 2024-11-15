@@ -7,33 +7,53 @@
 | Move into a folder (change directory) | `cd ____` |
 | Move back to home folder | `cd` |
 | Create a folder (make directory) | `mkdir ____` |
-| Open/create a source code file | `code ____.c` |
-| Compile source code to machine code | `make ____` |
-| Run a machine code file | `./____` |
+| **C** - create a C source code file | `code ____.c` |
+| **C** - Compile C source code to machine code | `make ____` |
+| **C** - Run a machine code file | `./____` |
+| **Python** - create a python source code file | `code ____.py` |
+| **Python** - Run a python file | `python ____.py` |
 
-## Using Printf
+## Printing Variables
 
-Print a string:
+**C** - Print a string:
 ```c
 string name = "Mr. Sharp";
 printf("String: %s\n", name);
 // String: Mr. Sharp
 ```
 
-Print an integer:
+**C** - Print an integer:
 ```c
 int score = 12;
 printf("Num: %i\n", score);
 // Num: 12
 ```
 
+**Python** - Print a string:
+```python
+name = "Mr. Sharp"
+print("My name is:", name)
+# or alternatively:
+print(f"My name is: {name}")
+# My name is: Mr. Sharp
+```
+
+**Python** - Print a number:
+```python
+score = 12;
+print("My score is:", score)
+# or alternatively:
+print(f"My score is: {score}")
+# My score is: 12
+```
+
 ## debug50 Debugger
 
 The debug50 debugger is best used when your code compiles and runs, but doesn't do what you expect it to.
 
-1. Compile your program with `make ____`
+1. Compile your program with `make ____` (only needed for C)
 2. Set a breakpoint in your code by clicking to the left of a line number and adding a red dot.
-3. Run the debugger with `debug50 ./____`
+3. Run the debugger with `debug50 ./____` (for C) or `debug50 python ____.py` (for python)
 4. Wait a bit for the debugger to start up
 5. The debugger will pause at the breakpoint. You can then use the "Step Forward" and "Step Into" buttons to move through your code
 
