@@ -49,7 +49,7 @@ else
 
 ```python
 # Print a number
-score = 12;
+score = 12
 print("Num:", score)
 
 # Print a string
