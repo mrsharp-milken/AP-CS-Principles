@@ -13,38 +13,60 @@
 | **Python** - create a python source code file | `code ____.py` |
 | **Python** - Run a python file | `python ____.py` |
 
-## Printing Variables
+## Code Samples - C
 
-**C** - Print a string:
 ```c
-string name = "Mr. Sharp";
-printf("String: %s\n", name);
-// String: Mr. Sharp
-```
-
-**C** - Print an integer:
-```c
+// Print an integer
 int score = 12;
 printf("Num: %i\n", score);
-// Num: 12
+
+// Print a string
+string name = "Mr. Sharp";
+printf("String: %s\n", name);
+
+// For loop 0-9
+for (int i = 0; i < 10; i++)
+{
+    printf("Loop: %i\n", i);
+}
+
+// If and else
+if (num > 90)
+{
+    printf("Grade: A\n");
+}
+else if (num > 80)
+{
+    printf("Grade: B\n");
+}
+else
+{
+    printf("Grade: C\n");
+}
 ```
 
-**Python** - Print a string:
-```python
-name = "Mr. Sharp"
-print("My name is:", name)
-# or alternatively:
-print(f"My name is: {name}")
-# My name is: Mr. Sharp
-```
+## Code Samples - Python
 
-**Python** - Print a number:
 ```python
+# Print a number
 score = 12;
-print("My score is:", score)
-# or alternatively:
-print(f"My score is: {score}")
-# My score is: 12
+print("Num:", score)
+
+# Print a string
+name = "Mr. Sharp"
+print("String:", name)
+
+# For loop 0-9
+for i in range(0, 10):
+    print("Loop:", i)
+
+# If and else
+if num > 90:
+    print("Grade: A")
+elif num > 80:
+    print("Grade: B")
+else:
+    print("Grade: C")
 ```
 
 ## debug50 Debugger
