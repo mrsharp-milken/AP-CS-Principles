@@ -18,7 +18,7 @@
 ### Variables and Input - C
 ```c
 // Get user input
-#include <cs50.h> // Add the imports to the top of your program
+#include <cs50.h> // Put imports at the top of your code
 #include <stdio.h> 
 string word = get_string("Type a word: ")
 int num = get_int("Type a number: ")
@@ -36,7 +36,7 @@ printf("String: %s\n", name);
 ### Variables and Input - Python
 ```python
 # Get user input
-import cs50 # put this at the top of your program
+import cs50 # Put imports at the top of your code
 word = cs50.get_string("Type a word: ")
 num = cs50.get_int("Type a number: ")
 decimal = cs50.get_float("Type a decimal number: ")
