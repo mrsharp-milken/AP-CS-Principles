@@ -126,7 +126,7 @@ void hello(string name)
 ### Simple Functions with Main - Python
 ```python
 def main():
-    hello("Mr. Sharp)
+    hello("Mr. Sharp")
 
 def hello(name):
     print("Hi", name)
