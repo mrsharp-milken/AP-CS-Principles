@@ -13,9 +13,17 @@
 | **Python** - create a python source code file | `code ____.py` |
 | **Python** - Run a python file | `python ____.py` |
 
-## Code Samples - C
+## Code Samples
 
+### Variables and Input - C
 ```c
+// Get user input
+#include <cs50.h> // Add the imports to the top of your program
+#include <stdio.h> 
+string word = get_string("Type a word: ")
+int num = get_int("Type a number: ")
+float decimal = get_float("Type a decimal number: ")
+
 // Print an integer
 int score = 12;
 printf("Num: %i\n", score);
@@ -23,19 +31,62 @@ printf("Num: %i\n", score);
 // Print a string
 string name = "Mr. Sharp";
 printf("String: %s\n", name);
+```
 
+### Variables and Input - Python
+```python
+# Get user input
+import cs50 # put this at the top of your program
+word = cs50.get_string("Type a word: ")
+num = cs50.get_int("Type a number: ")
+decimal = cs50.get_float("Type a decimal number: ")
+
+# Print a number
+score = 12
+print("Num:", score)
+
+# Print a string
+name = "Mr. Sharp"
+print("String:", name)
+```
+
+### For and While Loops - C
+```c
 // For loop 0-9
 for (int i = 0; i < 10; i++)
 {
     printf("Loop: %i\n", i);
 }
 
-// If and else
+// While loop 10-1
+int lives = 10;
+while (lives > 0)
+{
+    printf("Lives left: %i\n", lives);
+    lives--;
+}
+```
+
+### For and While Loops - Python
+```python
+# For loop 0-9
+for i in range(0, 10):
+    print("Loop:", i)
+
+# While loop 10-1
+lives = 10
+while lives > 0:
+    print(f"Lives left: {lives}")
+    lives -= 1
+```
+
+### If, Else If and Else - C
+```c
 if (num > 90)
 {
     printf("Grade: A\n");
 }
-else if (num > 80)
+else if (num > 80 && num < 90)
 {
     printf("Grade: B\n");
 }
@@ -45,28 +96,42 @@ else
 }
 ```
 
-## Code Samples - Python
-
+### If, Else If and Else - Python
 ```python
-# Print a number
-score = 12
-print("Num:", score)
-
-# Print a string
-name = "Mr. Sharp"
-print("String:", name)
-
-# For loop 0-9
-for i in range(0, 10):
-    print("Loop:", i)
-
-# If and else
 if num > 90:
     print("Grade: A")
-elif num > 80:
+elif num > 80 and num < 90:
     print("Grade: B")
 else:
     print("Grade: C")
+```
+
+### Simple Functions with Main - C
+```c
+#include <stdio.h>
+
+void hello(string name);
+
+int main(void)
+{
+    hello("Mr. Sharp");
+}
+
+void hello(string name)
+{
+    printf("Hi %s\n", name);
+}
+```
+
+### Simple Functions with Main - Python
+```python
+def main():
+    hello("Mr. Sharp)
+
+def hello(name):
+    print("Hi", name)
+
+main() # Must call main at bottom of program!
 ```
 
 ## debug50 Debugger
